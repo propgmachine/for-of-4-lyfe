@@ -87,10 +87,6 @@ describe(`countSpaces`, () => {
     expect(countSpaces(sentence1)).toBe(3);
     expect(countSpaces(sentence2)).toBe(5);
   })
-
-  it(`isn't reassignable`, () => {
-    expect(() => countSpaces = 500).toThrow();
-  })
 })
 
 describe(`countTrues`, () => {
@@ -123,10 +119,6 @@ describe(`countTrues`, () => {
     expect(countTrues(values1)).toBe(2);
     expect(countTrues(values2)).toBe(4);
   })
-
-  it(`isn't reassignable`, () => {
-    expect(() => countTrues = 500).toThrow();
-  })
 })
 
 describe('makeFriendly', () => {
@@ -142,10 +134,6 @@ describe('makeFriendly', () => {
     expect(makeFriendly(paragraph1)).toEqual(friendly1);
     expect(makeFriendly(paragraph2)).toEqual(friendly2);
     expect(makeFriendly(paragraph3)).toEqual(friendly3);
-  })
-
-  it(`isn't reassignable`, () => {
-    expect(() => makeFriendly = 500).toThrow();
   })
 })
 
@@ -171,10 +159,6 @@ describe('cubeAll', () => {
 
     expect(nums1).toEqual(originalNums1);
     expect(nums2).toEqual(originalNums2);
-  })
-
-  it(`isn't reassignable`, () => {
-    expect(() => cubeAll = 500).toThrow();
   })
 })
 
@@ -216,10 +200,6 @@ describe('addNoises', () => {
 
     expect(animals1).toEqual(originalAnimals1);
     expect(animals2).toEqual(originalAnimals2);
-  })
-
-  it(`isn't reassignable`, () => {
-    expect(() => addNoises = 500).toThrow();
   })
 })
 
@@ -288,10 +268,6 @@ describe('womenOnly', () => {
     expect(people1).toEqual(originalPeople1);
     expect(people2).toEqual(originalPeople2);
   })
-
-  it(`isn't reassignable`, () => {
-    expect(() => womenOnly = 500).toThrow();
-  })
 })
 
 describe('integersOnly', () => {
@@ -319,9 +295,5 @@ describe('integersOnly', () => {
 
     expect(nums1).toEqual(originalNums1);
     expect(nums2).toEqual(originalNums2);
-  })
-
-  it(`isn't reassignable`, () => {
-    expect(() => integersOnly = 500).toThrow();
   })
 })
