@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This will be an exercise in using function expressions and `for of` loops.
+This will be an exercise in using `for of` loops.
 
 Most times you iterate through an array, you don't need the index you're currently on, so `for of` loops are the simpler and nicer-looking choice.
 
@@ -23,8 +23,6 @@ That one got away from me. Sorry.
 ### Guidelines
 
 * Although we won't be testing for what kind of loop you'll be using, this isn't just an exercise in solving problems. Let's use our new `for of` loop!
-* We WILL be testing for function expressions using `const`. If you aren't passing that particular test, look up function expressions again, or refer to our example!
-
 
 ### Challenge Descriptions
 
