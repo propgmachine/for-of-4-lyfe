@@ -2,6 +2,112 @@
  * YOUR CODE HERE *
  ******************/
 
+//-------------------------------------------
+function addAll(numbers) {
+  let sum = 0;
+  for (const number of numbers) {
+    sum = sum + number;
+  }
+  return sum;
+}
+
+//-------------------------------------------
+function countSpaces(str) {
+  let numSpaces = 0;
+  for (const char of str) {
+    if (char === ' ') {
+      numSpaces = numSpaces + 1;
+    }
+  }
+  return numSpaces;
+}
+
+//-------------------------------------------
+function countSpacesAlt(str) {
+  return str.split(' ').length - 1;
+}
+
+//-------------------------------------------
+function countTrues(booleans) {
+  let numTrues = 0;
+  for (const boolean of booleans) {
+    if (boolean === true) {
+      numTrues = numTrues + 1;
+    }
+  }
+  return numTrues;
+}
+
+
+//-------------------------------------------
+function makeFriendly(str) {
+  let outputStr = '';
+  for (const char of str) {
+    if (char === '.') {
+      outputStr = outputStr + '!';
+    } else {
+      outputStr = outputStr + char;
+    }
+  }
+  return outputStr;
+}
+
+//-------------------------------------------
+function makeFriendlyAlt(str) {
+  return str.split('.').join('!');
+}
+
+//-------------------------------------------
+function cubeAll(numbers) {
+  let output = [];
+  for (const number of numbers) {
+    const cubed = number * number * number;
+    output.push(cubed);
+  }
+  return output;
+}
+
+
+//-------------------------------------------
+function addNoises(strs) {
+  let output = [];
+  for (const animalName of strs) {
+    if (animalName === 'Fido' || animalName === 'Rolph' || animalName === 'Maisie') {
+      output.push(animalName + " says \"Woof!\"")
+    }
+    if (animalName === 'Garfield' || animalName === 'Heathcliff') {
+      output.push(animalName + " says \"Meow!\"")
+    }
+    if (animalName === 'Barnie' || animalName === 'Sharp Tooth') {
+      output.push(animalName + " says \"ROWR.\"")
+    }
+  }
+  return output;
+}
+
+
+//-------------------------------------------
+function womenOnly(strs) {
+  let output = [];
+  for (const person of strs) {
+    const lastChar = person[person.length - 1];
+    if (lastChar === 'F') {
+      output.push(person);
+    }
+  }
+  return output;
+}
+
+//-------------------------------------------
+function integersOnly(numbers) {
+  let output = [];
+  for (const number of numbers) {
+    if (number % 2 === 0 || number % 2 === 1 || number % 2 === -1) {
+      output.push(number);
+    }
+  }
+  return output;
+}
 
 
 
